@@ -155,6 +155,7 @@ namespace Gamekit2D
             SceneLinkedSMB<PlayerCharacter>.Initialise(m_Animator, this);
 
             m_StartingPosition = transform.position;
+            Debug.Log("Starting position: " + m_StartingPosition);
             m_StartingFacingLeft = GetFacing() < 0.0f;
         }
 
