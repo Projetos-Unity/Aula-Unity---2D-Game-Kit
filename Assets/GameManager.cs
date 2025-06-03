@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     {
         if (coinText != null)
         {
-            coinText.text = "Moedas: " + coinCount;
+            coinText.text = coinCount.ToString();
         }
     }
 }
