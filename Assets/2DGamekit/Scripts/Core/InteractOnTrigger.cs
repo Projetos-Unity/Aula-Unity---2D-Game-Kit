@@ -24,9 +24,10 @@ namespace Gamekit2D
 
         void OnTriggerEnter(Collider other)
         {
-            if (layers.Contains (other.gameObject))
+            if (layers.Contains(other.gameObject))
             {
                 ExecuteOnEnter(other);
+                Debug.Log("Trigger Entered: " + other.gameObject.name);
             }
         }
 

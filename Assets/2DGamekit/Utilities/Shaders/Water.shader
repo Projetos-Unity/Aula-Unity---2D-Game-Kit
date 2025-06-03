@@ -50,11 +50,6 @@
 			{
 				Varyings o;
 				o.vertex = TransformObjectToHClip(v.vertex);
-
-#if !UNITY_UV_STARTS_AT_TOP
-				if(_BackgroundTexture_TexelSize.y < 0)
-					o.grabPos.y = 1.0 - o.grabPos.y;
-#endif
 				o.uv = v.uv;
 				o.uv2 = v.uv2;
 
