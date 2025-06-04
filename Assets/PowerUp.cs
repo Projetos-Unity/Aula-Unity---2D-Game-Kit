@@ -32,6 +32,8 @@ public class PowerUp : MonoBehaviour
             damageableComponent.GainHealth(1);
             // Invoke the OnGainHealth event to notify other systems
             damageableComponent.OnGainHealth.Invoke(1, damageableComponent);
+            //Increase player's size
+            player.transform.localScale = new Vector3(playerScale.x + 0.1f, playerScale.y + 0.1f, playerScale.z);
             Debug.Log("Player health increased by 1. Current Health: " + damageableComponent.CurrentHealth);
         }
         else
